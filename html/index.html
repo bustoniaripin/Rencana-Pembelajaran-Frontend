@@ -1,25 +1,79 @@
 <!doctype html>
-<html>
+
+<html lang="id">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Halaman profil dan portofolio belajar Bustoni Arifin."
+    />
+
+    <style>
+      body {
+        background-color: #f0f2f5;
+
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: #1a73e8;
+
+        text-align: center;
+      }
+    </style>
+
     <title>Profil Bustoni</title>
   </head>
+
   <body>
     <header>
       <h1>BUSTONI ARIFIN</h1>
+
       <img src="https://picsum.photos/200" alt="Foto Belajar Programing" />
     </header>
+
     <main>
       <section>
         <p>
           Saya adalah <strong>bustoni</strong> saya ingin belajar
+
           <em>pemrograman</em>
         </p>
+
         <h2>Rencana Belajar Saya</h2>
+
         <ol>
           <li>HTML Dasar</li>
+
           <li>Desain Web dengan CSS</li>
+
           <li>Logika JavaScript</li>
         </ol>
+
+        <table border="1">
+          <tr>
+            <th>No</th>
+
+            <th>Mata Pelajaran</th>
+
+            <th>Tingkat Kesulitan</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+
+            <td>Html Dasar</td>
+
+            <td>Mudah</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Html Lanjutan</td>
+            <td>Menengah</td>
+          </tr>
+        </table>
       </section>
 
       <section>
@@ -28,14 +82,48 @@
             >Git Hub Saya</a
           >
         </p>
+
+        <h3>Media pendukung</h3>
+
+        <audio controls>
+          <source src="a'raf.mp3" type="audio/mp3" />
+        </audio>
+
+        <video controls width="300">
+          <source src="video-belajar.mp4" type="video/mp4" />
+
+          Browser anda tidak mendukung
+        </video>
+
+        <iframe src="https://example.com" width="300" height="150"></iframe>
+
         <h2>Hubungi Saya</h2>
+
         <form action="">
           <label for="email">Email</label>
+
           <input type="email" id="email" placeholder="Masukkan email Anda" />
+
+          <label for="tanya">Alasan menghubungi</label>
+          <select id="tanya">
+            <option value="tanya materi">Tanya materi</option>
+
+            <option value="Ajak Kolaborasi">Ajak Kolaborasi</option>
+          </select>
+
+          <label for="pesan">pesan</label>
+
+          <textarea
+            id="pesan"
+            rows="3"
+            placeholder="Tulis pesan di sini"
+          ></textarea>
+
           <button type="submit">Kirim Pesan</button>
         </form>
       </section>
     </main>
+
     <footer>Dibuat oleh Bustoni Arifin</footer>
   </body>
 </html>
