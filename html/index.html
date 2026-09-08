@@ -8,16 +8,52 @@
       name="description"
       content="Halaman profil dan portofolio belajar Bustoni Arifin."
     />
+
     <style>
       body {
         background-color: #f0f2f5;
         font-family: Arial, sans-serif;
       }
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
       h1 {
         color: #1a73e8;
         text-align: center;
       }
+      .kartu {
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 600px;
+        border-radius: 8px;
+      }
+      #tombol-kirim {
+        color: #ffffff;
+        background-color: #1a73e8;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      #tombol-kirim:hover {
+        background-color: #1557b0;
+      }
+      input:focus, textarea:focus {
+        outline: none;
+        border: 2px solid #1a73e8;
+      }
     </style>
+
     <title>Profil Bustoni</title>
   </head>
   <body>
@@ -26,7 +62,7 @@
       <img src="https://picsum.photos/200" alt="Foto Belajar Programing" />
     </header>
     <main>
-      <section>
+      <section class="kartu">
         <p>
           Saya adalah <strong>bustoni</strong> saya ingin belajar
           <em>pemrograman</em>
@@ -56,7 +92,7 @@
         </table>
       </section>
 
-      <section>
+      <section class="kartu">
         <p>
           <a href="https://github.com/bustoniaripin" target="_blank"
             >Git Hub Saya</a
@@ -86,7 +122,7 @@
             rows="3"
             placeholder="Tulis pesan di sini"
           ></textarea>
-          <button type="submit">Kirim Pesan</button>
+          <button id="tombol-kirim" type="submit">Kirim Pesan</button>
         </form>
       </section>
     </main>
