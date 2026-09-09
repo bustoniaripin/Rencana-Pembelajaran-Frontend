@@ -48,9 +48,42 @@
       #tombol-kirim:hover {
         background-color: #1557b0;
       }
-      input:focus, textarea:focus {
+      input:focus,
+      textarea:focus {
         outline: none;
         border: 2px solid #1a73e8;
+      }
+
+      #tombol-bantuan {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333333;
+        color: #ffffff;
+        padding: 10px 18px;
+        border-radius: 20px;
+        border: none;
+        z-index: 100;
+      }
+
+      .wadah-media {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        align-items: center;
+      }
+
+      @media (max-width: 600px) {
+        .kartu {
+          margin: 10px;
+          padding: 12px;
+        }
+        h1 {
+          font-size: 20px;
+        }
+        .wadah-media {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
 
@@ -99,14 +132,16 @@
           >
         </p>
         <h3>Media pendukung</h3>
-        <audio controls>
-          <source src="a'raf.mp3" type="audio/mp3" />
-        </audio>
-        <video controls width="300">
-          <source src="video-belajar.mp4" type="video/mp4" />
-          Browser anda tidak mendukung
-        </video>
-        <iframe src="https://example.com" width="300" height="150"></iframe>
+        <div class="wadah-media">
+          <audio controls>
+            <source src="a'raf.mp3" type="audio/mp3" />
+          </audio>
+          <video controls width="300">
+            <source src="video-belajar.mp4" type="video/mp4" />
+            Browser anda tidak mendukung
+          </video>
+          <iframe src="https://example.com" width="300" height="150"></iframe>
+        </div>
         <h2>Hubungi Saya</h2>
         <form action="">
           <label for="email">Email</label>
@@ -126,6 +161,7 @@
         </form>
       </section>
     </main>
+    <button id="tombol-bantuan">Bantuan</button>
     <footer>Dibuat oleh Bustoni Arifin</footer>
   </body>
 </html>
