@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Profil Portofolio Bustoni Arifin" />
+    <link rel="stylesheet" href="style.css">
+    <title>Bustoni Arifin</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bustoni Arifin</h1>
+      <img class="foto-profil" src="profil.jpeg" alt="Foto Bustoni Arifin" />
+      <p>Calon Frontend Developer</p>
+    </header>
+    <main>
+
+      <section id="tentang">
+        <p>
+          Bismillah perkenalkan saya adalah Bustoni Arifin. Saya berasal dari
+          Bandar Lampung dan saya adalah seorang calon Frontend Developer
+        </p>
+        <table border="1">
+          <tr>
+            <th>No.</th>
+            <th>Keahlian</th>
+            <th>Tingkat</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>HTML</td>
+            <td>Dasar</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>CSS</td>
+            <td>Dasar</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="proyek">
+        <div class="kartu-proyek">
+            <h3>Proyek 1 : Landing Page Profil Personal</h3>
+            <ul>
+                <li><b>Judul:</b> Website Portofolio Pribadi</li>
+                <li><b>Deskripsi:</b> Halaman perkenalan profil, ringkasan keahlian, dan jalur kontak profesional yang dibangun menggunakan HTML5 semantik dan CSS responsif.</li>
+                <li><a href="#">Lihat detail</a></li>
+            </ul>
+        </div>
+        <div class="kartu-proyek">
+            <h3>Proyek 2 : Halaman Katalog Menu Restoran</h3>
+            <ul>
+                <li><b>Judul:</b> Menu Digital Kafe & Resto</li>
+                <li><b>Deskripsi:</b> Tampilan daftar menu makanan dan minuman interaktif dengan tata letak CSS Grid, kartu harga, dan efek animasi sorot kursor (hover).</li>
+                <li><a href="#">Lihat detail</a></li>
+            </ul>
+        </div>
+        <div class="kartu-proyek">
+            <h3>Proyek 3: Formulir Registrasi Acara (Event Sign-up)</h3>
+            <ul>
+                <li><b>Judul:</b> Form Pendaftaran Webinar</li>
+                <li><b>Deskripsi:</b> Antarmuka pendaftaran online lengkap dengan berbagai jenis input, pilihan kategori sesi, area catatan, dan penataan kolom menggunakan Flexbox.</li>
+                <li><a href="#">Lihat detail</a></li>
+            </ul>
+        </div>
+      </section>
+      
+      <section id="kontak">
+        <h3>Hubungi Kami :</h3>
+        <form action="">
+            <label for="nama" >Nama :</label>
+            <input type="text" id="nama">
+            <label for="email" >Email :</label>
+            <input type="email" id="email">
+            <label for="alasan">Alasan Menghubungi :</label>
+            <select id="alasan">
+                <option value="tanya-harga">Harga</option>
+                <option value="tanya-waktu">Waktu</option>
+            </select>
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" rows="3" placeholder="Tulis pesan di sini!"></textarea>
+            <button id="tombol-kirim" type="submit">Kirim pesan</button>
+        </form>
+      </section>
+    </main>
+    <button id="tombol-bantuan">Bantuan</button>
+    <footer>hak cipta &copy; 2026  Bustoni Arifin</footer>
+  </body>
+</html>
