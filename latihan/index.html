@@ -1,90 +1,84 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Profil Portofolio Bustoni Arifin" />
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Fortofolio Bustoni Arifin" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- font start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font end-->
+
+    <!-- feather icon start-->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- feather icon end-->
+
     <title>Bustoni Arifin</title>
   </head>
   <body>
     <header>
-      <h1>Bustoni Arifin</h1>
-      <img class="foto-profil" src="profil.jpeg" alt="Foto Bustoni Arifin" />
-      <p>Calon Frontend Developer</p>
+      <nav class="navbar container">
+        <a href="#" class="logo">&lt;Bustoni<span>Arifin</span>/&gt;</a>
+        <div class="navbar-nav">
+          <a href="#">Home</a>
+          <a href="#">Project</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="feather">
+          <i class="tema" data-feather="sun"></i>
+          <i class="menu" id="humberger-menu" data-feather="menu"></i>
+        </div>
+      </nav>
     </header>
-    <main>
 
-      <section id="tentang">
-        <p>
-          Bismillah perkenalkan saya adalah Bustoni Arifin. Saya berasal dari
-          Bandar Lampung dan saya adalah seorang calon Frontend Developer
-        </p>
-        <table border="1">
-          <tr>
-            <th>No.</th>
-            <th>Keahlian</th>
-            <th>Tingkat</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>HTML</td>
-            <td>Dasar</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>CSS</td>
-            <td>Dasar</td>
-          </tr>
-        </table>
-      </section>
-
-      <section id="proyek">
-        <div class="kartu-proyek">
-            <h3>Proyek 1 : Landing Page Profil Personal</h3>
-            <ul>
-                <li><b>Judul:</b> Website Portofolio Pribadi</li>
-                <li><b>Deskripsi:</b> Halaman perkenalan profil, ringkasan keahlian, dan jalur kontak profesional yang dibangun menggunakan HTML5 semantik dan CSS responsif.</li>
-                <li><a href="#">Lihat detail</a></li>
-            </ul>
+    <main class="container hero">
+      <section class="hero-section">
+        <img src="./profil.jpeg" alt="Foto Profil" />
+        <div class="content">
+          <p class="available">Tersedia untuk Pekerjaan / Freelance</p>
+          <h1>Hai, Saya <span>Bustoni Arifin.</span></h1>
+          <p class="content-1">
+            Saya merancang dan membangun antarmuka web yang rapi, cepat,
+            responsif, serta mudah digunakan oleh pengguna.
+          </p>
+          <div class="cta">
+            <a href="#" class="lihat">Lihat Project</a>
+            <a href="#" class="call">Hubungi Saya</a>
+          </div>
         </div>
-        <div class="kartu-proyek">
-            <h3>Proyek 2 : Halaman Katalog Menu Restoran</h3>
-            <ul>
-                <li><b>Judul:</b> Menu Digital Kafe & Resto</li>
-                <li><b>Deskripsi:</b> Tampilan daftar menu makanan dan minuman interaktif dengan tata letak CSS Grid, kartu harga, dan efek animasi sorot kursor (hover).</li>
-                <li><a href="#">Lihat detail</a></li>
-            </ul>
-        </div>
-        <div class="kartu-proyek">
-            <h3>Proyek 3: Formulir Registrasi Acara (Event Sign-up)</h3>
-            <ul>
-                <li><b>Judul:</b> Form Pendaftaran Webinar</li>
-                <li><b>Deskripsi:</b> Antarmuka pendaftaran online lengkap dengan berbagai jenis input, pilihan kategori sesi, area catatan, dan penataan kolom menggunakan Flexbox.</li>
-                <li><a href="#">Lihat detail</a></li>
-            </ul>
-        </div>
-      </section>
-      
-      <section id="kontak">
-        <h3>Hubungi Kami :</h3>
-        <form action="">
-            <label for="nama" >Nama :</label>
-            <input type="text" id="nama">
-            <label for="email" >Email :</label>
-            <input type="email" id="email">
-            <label for="alasan">Alasan Menghubungi :</label>
-            <select id="alasan">
-                <option value="tanya-harga">Harga</option>
-                <option value="tanya-waktu">Waktu</option>
-            </select>
-            <label for="pesan">Pesan</label>
-            <textarea id="pesan" rows="3" placeholder="Tulis pesan di sini!"></textarea>
-            <button id="tombol-kirim" type="submit">Kirim pesan</button>
-        </form>
       </section>
     </main>
-    <button id="tombol-bantuan">Bantuan</button>
-    <footer>hak cipta &copy; 2026  Bustoni Arifin</footer>
+
+    <div class="container">
+      <h2 class="skills">Keahlian Utama:</h2>
+      <div class="skills-grid">
+        <p class="skills-tag">HTML5 & Semantic UI</p>
+        <p class="skills-tag">CSS3 / Flexbox & Grid</p>
+        <p class="skills-tag">JavaScript (ES6+)</p>
+        <p class="skills-tag">React.js</p>
+        <p class="skills-tag">Tailwind CSS</p>
+        <p class="skills-tag">Git & GitHub</p>
+        <p class="skills-tag">Responsive Web Design</p>
+        <p class="skills-tag">REST API Integration</p>
+      </div>
+    </div>
+
+    <!-- script feather icons start-->
+    <script>
+      feather.replace();
+    </script>
+    <!-- script feather icons end-->
+
+    <!-- javascript -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
